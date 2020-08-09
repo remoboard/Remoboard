@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  RemoteKBMac
+
+  Created by everettjf on 2019/9/1.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+
+
+"first.start.guide" = "欢迎使用「远程输入法」，当前您打开的应用是「远程输入法的桌面端」，如果您还不知道怎么使用，请打开菜单「帮助-如何使用」学习一下使用方法，祝您使用愉快 :)";
+"Connect" = "连接";
+"Disconnect" = "断开";
+"Connected, Enjoy Typing :)" = "已连接，打字啦 :)";

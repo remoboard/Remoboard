@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  RemoteKBMac
+
+  Created by everettjf on 2019/9/1.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+"first.start.guide" = "Welcome, This is the desktop app for Remoboard app on phone. Please open menu Help > How To Use to learn what to do next :)";

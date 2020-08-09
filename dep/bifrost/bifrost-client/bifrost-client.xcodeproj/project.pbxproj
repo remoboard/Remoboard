@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D12F74FA22714AD600B7EF2A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D12F74F922714AD600B7EF2A /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D12F74F422714AD600B7EF2A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D12F74F622714AD600B7EF2A /* bifrost-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "bifrost-client"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12F74F922714AD600B7EF2A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D12F751A22720D1E00B7EF2A /* bifrost_chat_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_chat_client.hpp; sourceTree = "<group>"; };
+		D12F751B22720D1E00B7EF2A /* bifrost_file_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_file_client.hpp; sourceTree = "<group>"; };
+		D12F752322720D7000B7EF2A /* bifrost_protocol.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bifrost_protocol.hpp; sourceTree = "<group>"; };
+		D12F752F22720FAE00B7EF2A /* bifrost_client.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bifrost_client.hpp; sourceTree = "<group>"; };
+		D14288282272960600CE2325 /* bifrost_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_config.hpp; sourceTree = "<group>"; };
+		D142882E22740BB300CE2325 /* bifrost_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_file.hpp; sourceTree = "<group>"; };
+		D142883222747CC400CE2325 /* bifrost_util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_util.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D12F74F322714AD600B7EF2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D12F74ED22714AD600B7EF2A = {
+			isa = PBXGroup;
+			children = (
+				D12F74F822714AD600B7EF2A /* bifrost-client */,
+				D12F74F722714AD600B7EF2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D12F74F722714AD600B7EF2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D12F74F622714AD600B7EF2A /* bifrost-client */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D12F74F822714AD600B7EF2A /* bifrost-client */ = {
+			isa = PBXGroup;
+			children = (
+				D12F751522720D1E00B7EF2A /* bifrost */,
+				D12F74F922714AD600B7EF2A /* main.cpp */,
+			);
+			path = "bifrost-client";
+			sourceTree = "<group>";
+		};
+		D12F751522720D1E00B7EF2A /* bifrost */ = {
+			isa = PBXGroup;
+			children = (
+				D142882022720FE800CE2325 /* common */,
+				D12F753122720FBA00B7EF2A /* client */,
+			);
+			name = bifrost;
+			path = ../../bifrost;
+			sourceTree = "<group>";
+		};
+		D12F753122720FBA00B7EF2A /* client */ = {
+			isa = PBXGroup;
+			children = (
+				D12F752F22720FAE00B7EF2A /* bifrost_client.hpp */,
+				D12F751A22720D1E00B7EF2A /* bifrost_chat_client.hpp */,
+				D12F751B22720D1E00B7EF2A /* bifrost_file_client.hpp */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		D142882022720FE800CE2325 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				D142883222747CC400CE2325 /* bifrost_util.hpp */,
+				D142882E22740BB300CE2325 /* bifrost_file.hpp */,
+				D14288282272960600CE2325 /* bifrost_config.hpp */,
+				D12F752322720D7000B7EF2A /* bifrost_protocol.hpp */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D12F74F522714AD600B7EF2A /* bifrost-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12F74FD22714AD600B7EF2A /* Build configuration list for PBXNativeTarget "bifrost-client" */;
+			buildPhases = (
+				D12F74F222714AD600B7EF2A /* Sources */,
+				D12F74F322714AD600B7EF2A /* Frameworks */,
+				D12F74F422714AD600B7EF2A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bifrost-client";
+			productName = "bifrost-client";
+			productReference = D12F74F622714AD600B7EF2A /* bifrost-client */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D12F74EE22714AD600B7EF2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = everettjf;
+				TargetAttributes = {
+					D12F74F522714AD600B7EF2A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D12F74F122714AD600B7EF2A /* Build configuration list for PBXProject "bifrost-client" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D12F74ED22714AD600B7EF2A;
+			productRefGroup = D12F74F722714AD600B7EF2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D12F74F522714AD600B7EF2A /* bifrost-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D12F74F222714AD600B7EF2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12F74FA22714AD600B7EF2A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D12F74FB22714AD600B7EF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D12F74FC22714AD600B7EF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D12F74FE22714AD600B7EF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPV49M8592;
+				HEADER_SEARCH_PATHS = $HOME/local/src/boost_1_70_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D12F74FF22714AD600B7EF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPV49M8592;
+				HEADER_SEARCH_PATHS = $HOME/local/src/boost_1_70_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D12F74F122714AD600B7EF2A /* Build configuration list for PBXProject "bifrost-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12F74FB22714AD600B7EF2A /* Debug */,
+				D12F74FC22714AD600B7EF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12F74FD22714AD600B7EF2A /* Build configuration list for PBXNativeTarget "bifrost-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12F74FE22714AD600B7EF2A /* Debug */,
+				D12F74FF22714AD600B7EF2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D12F74EE22714AD600B7EF2A /* Project object */;
+}

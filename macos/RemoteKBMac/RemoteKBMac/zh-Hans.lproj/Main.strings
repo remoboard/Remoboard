@@ -1,0 +1,265 @@
+
+/* Class = "NSMenuItem"; title = "Remoboard"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "远程输入法";
+
+/* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
+"1b7-l0-nxx.title" = "Find";
+
+/* Class = "NSMenuItem"; title = "Multiline Input Mode"; ObjectID = "1f0-Cy-6y7"; */
+"1f0-Cy-6y7.title" = "多行输入模式";
+
+/* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
+"2oI-Rn-ZJC.title" = "Transformations";
+
+/* Class = "NSMenuItem"; title = "How To Use"; ObjectID = "318-eE-fkb"; */
+"318-eE-fkb.title" = "如何使用";
+
+/* Class = "NSMenuItem"; title = "Connect by IP or Connection Code"; ObjectID = "31X-D6-vE1"; */
+"31X-D6-vE1.title" = "使用连接码连接（或IP地址）";
+
+/* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
+"3IN-sU-3Bg.title" = "Spelling";
+
+/* Class = "NSMenu"; title = "Speech"; ObjectID = "3rS-ZA-NoH"; */
+"3rS-ZA-NoH.title" = "Speech";
+
+/* Class = "NSTabViewItem"; label = "Bluetooth"; ObjectID = "3xw-2P-sal"; */
+"3xw-2P-sal.label" = "蓝牙";
+
+/* Class = "NSMenuItem"; title = "Find"; ObjectID = "4EN-yA-p0u"; */
+"4EN-yA-p0u.title" = "Find";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "关于";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "Redo";
+
+/* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
+"78Y-hA-62v.title" = "Correct Spelling Automatically";
+
+/* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
+"9ic-FL-obx.title" = "Substitutions";
+
+/* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */
+"9yt-4B-nSM.title" = "Smart Copy/Paste";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSMenuItem"; title = "Install Phone App"; ObjectID = "DXw-P7-ohg"; */
+"DXw-P7-ohg.title" = "安装手机应用";
+
+/* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
+"Dv1-io-Yv7.title" = "Spelling and Grammar";
+
+/* Class = "NSMenuItem"; title = "Check Update"; ObjectID = "Eax-9A-qyT"; */
+"Eax-9A-qyT.title" = "检查更新";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "帮助";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Input Here, And Tap Enter"; ObjectID = "FEO-js-Jai"; */
+"FEO-js-Jai.placeholderString" = "在这里输入，回车发送";
+
+/* Class = "NSMenu"; title = "Substitutions"; ObjectID = "FeM-D8-WVr"; */
+"FeM-D8-WVr.title" = "Substitutions";
+
+/* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "HFQ-gK-NFA"; */
+"HFQ-gK-NFA.title" = "Text Replacement";
+
+/* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "HFo-cy-zxI"; */
+"HFo-cy-zxI.title" = "Show Spelling and Grammar";
+
+/* Class = "NSWindow"; title = "Remoboard"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "远程输入法";
+
+/* Class = "NSMenuItem"; title = "Connect"; ObjectID = "IWf-hi-MVF"; */
+"IWf-hi-MVF.title" = "连接";
+
+/* Class = "NSTabViewItem"; label = "Standard Input Mode"; ObjectID = "KU5-AL-ZWH"; */
+"KU5-AL-ZWH.label" = "标准输入模式";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Standard Input Mode"; ObjectID = "KsX-pf-o5g"; */
+"KsX-pf-o5g.title" = "标准输入模式";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide";
+
+/* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
+"OwM-mh-QMV.title" = "Find Previous";
+
+/* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "Oyz-dy-DGm"; */
+"Oyz-dy-DGm.title" = "Stop Speaking";
+
+/* Class = "NSTabViewItem"; label = "IPNetwork"; ObjectID = "Pvj-Uo-hOa"; */
+"Pvj-Uo-hOa.label" = "IP连接";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "Select All";
+
+/* Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "S0p-oC-mLd"; */
+"S0p-oC-mLd.title" = "Jump to Selection";
+
+/* Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "UEZ-Bs-lqG"; */
+"UEZ-Bs-lqG.title" = "Capitalize";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "VPo-qa-1d1"; */
+"VPo-qa-1d1.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Auto Connect When App Startup"; ObjectID = "Vic-u9-gBa"; */
+"Vic-u9-gBa.title" = "应用启动时自动连接";
+
+/* Class = "NSMenuItem"; title = "Immediate Input Mode"; ObjectID = "Vwh-Q0-sEu"; */
+"Vwh-Q0-sEu.title" = "即时输入模式（编程模式）";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Paste and Match Style"; ObjectID = "WeT-3V-zwk"; */
+"WeT-3V-zwk.title" = "Paste and Match Style";
+
+/* Class = "NSMenu"; title = "Connect"; ObjectID = "Xo6-MT-862"; */
+"Xo6-MT-862.title" = "连接";
+
+/* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
+"Xz5-n4-O0W.title" = "Find…";
+
+/* Class = "NSMenuItem"; title = "Find and Replace…"; ObjectID = "YEy-JH-Tfz"; */
+"YEy-JH-Tfz.title" = "Find and Replace…";
+
+/* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "Ynk-f8-cLZ"; */
+"Ynk-f8-cLZ.title" = "Start Speaking";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Type Here"; ObjectID = "bSD-ta-qcw"; */
+"bSD-ta-qcw.placeholderString" = "在这里输入";
+
+/* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "buJ-ug-pKt"; */
+"buJ-ug-pKt.title" = "Use Selection for Find";
+
+/* Class = "NSMenu"; title = "Transformations"; ObjectID = "c8a-y6-VQd"; */
+"c8a-y6-VQd.title" = "Transformations";
+
+/* Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "cwL-P1-jid"; */
+"cwL-P1-jid.title" = "Smart Links";
+
+/* Class = "NSMenuItem"; title = "Make Lower Case"; ObjectID = "d9M-CD-aMd"; */
+"d9M-CD-aMd.title" = "Make Lower Case";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "Undo";
+
+/* Class = "NSButtonCell"; title = "Connect"; ObjectID = "fwS-Q7-Xz6"; */
+"fwS-Q7-Xz6.title" = "连接";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "gHR-fF-8Qf"; */
+"gHR-fF-8Qf.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
+"gVA-U4-sdL.title" = "Paste";
+
+/* Class = "NSTabViewItem"; label = "Immediate Input Mode"; ObjectID = "gW1-8b-rG3"; */
+"gW1-8b-rG3.label" = "即时输入模式（编程模式）";
+
+/* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
+"hQb-2v-fYv.title" = "Smart Quotes";
+
+/* Class = "NSMenuItem"; title = "Feedback"; ObjectID = "hil-w2-2Is"; */
+"hil-w2-2Is.title" = "反馈";
+
+/* Class = "NSMenuItem"; title = "Auto Re-connect When Disconnected"; ObjectID = "hoO-KE-IcN"; */
+"hoO-KE-IcN.title" = "当断开时自动连接";
+
+/* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "hz2-CU-CR7"; */
+"hz2-CU-CR7.title" = "Check Document Now";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Mode"; ObjectID = "kGf-gc-Iaq"; */
+"kGf-gc-Iaq.title" = "模式";
+
+/* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
+"mK6-2p-4JG.title" = "Check Grammar With Spelling";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "nGZ-8F-tXO"; */
+"nGZ-8F-tXO.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
+"pa3-QI-u2k.title" = "Delete";
+
+/* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "q09-fT-Sye"; */
+"q09-fT-Sye.title" = "Find Next";
+
+/* Class = "NSMenu"; title = "Mode"; ObjectID = "q7i-cA-ZSa"; */
+"q7i-cA-ZSa.title" = "输入模式";
+
+/* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
+"rbD-Rh-wIN.title" = "Check Spelling While Typing";
+
+/* Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "rgM-f4-ycn"; */
+"rgM-f4-ycn.title" = "Smart Dashes";
+
+/* Class = "NSButtonCell"; title = "Send"; ObjectID = "sBD-Fo-6OA"; */
+"sBD-Fo-6OA.title" = "Send";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Connection Code or IP"; ObjectID = "sph-Tp-IJF"; */
+"sph-Tp-IJF.placeholderString" = "连接码（或IP地址）";
+
+/* Class = "NSMenuItem"; title = "Official Site"; ObjectID = "t0P-5U-5nO"; */
+"t0P-5U-5nO.title" = "官方网站";
+
+/* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
+"tRr-pd-1PS.title" = "Data Detectors";
+
+/* Class = "NSMenu"; title = "Remoboard"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "远程输入法";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
+"uRl-iY-unG.title" = "Cut";
+
+/* Class = "NSMenuItem"; title = "Connect by Bluetooth (beta)"; ObjectID = "vGX-4J-NO5"; */
+"vGX-4J-NO5.title" = "使用蓝牙连接";
+
+/* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
+"vmV-6d-7jI.title" = "Make Upper Case";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "帮助";
+
+/* Class = "NSTextFieldCell"; title = "Waiting..."; ObjectID = "x0t-MK-JCN"; */
+"x0t-MK-JCN.title" = "等待...";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "Copy";
+
+/* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
+"xrE-MZ-jX0.title" = "Speech";
+
+/* Class = "NSTabViewItem"; label = "Multiline Input Mode"; ObjectID = "yUI-wG-Fl9"; */
+"yUI-wG-Fl9.label" = "多行输入模式";
+
+/* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
+"z6F-FW-3nz.title" = "Show Substitutions";
+
+
+"NWj-3n-1kg.title" = "微博";
+"FYJ-3v-BvA.title" = "微信订阅号";

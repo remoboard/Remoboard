@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  remotekb
+
+  Created by everettjf on 2019/8/30.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+
+"app.name" = "Remoboard";
+"app.longname" = "Remote Keyboard";
+
+"title.general" = "General";
+"title.howtouse" = "How To Use";
+"title.installguide" = "Install Guide";
+"title.downloaddesktop" = "Download Desktop App";
+"title.faq" = "FAQ";
+"title.manage" = "Manage";
+"title.quickwords" = "Quick Words";
+"title.connectionmode" = "Connection Mode";
+"title.allowfullaccess" = "Allow Full Access";
+"title.testinput" = "Test Input";
+"title.feedback" = "Feedback";
+"title.email" = "E-mail";
+"title.weibo" = "Weibo";
+"title.wechat" = "Wechat Subscription";
+"title.telegram" = "Telegram";
+"title.more" = "More";
+"title.appversion" = "App Version";
+"title.starapp" = "Star App";
+"title.shareapp" = "Share App";
+"title.qqgroup" = "QQ Group";
+"title.products" = "Our Products";
+"title.lab" = "Lab";
+"title.whatislab" = "What is Lab";
+
+"vc.testinput.title" = "Test Input";
+"vc.testinput.defaulttext" = "Input Here";
+
+"vc.quickwordslist.title" = "Manage Quick Words";
+"vc.quickwordsedit.title.edit" = "Edit Quick Word";
+"vc.quickwordsedit.title.add" = "Add Quick Word";
+"vc.quickwordsedit.save" = "Save";
+
+"common.viewdetailguide" = "View Detail Guide";
+"common.title.install" = "Install";
+"common.title.install.shortguide" = "1. Open Setting-General-Keyboard-Keyboard-Add New Keyboards, Tap Remoboard\n2. Then tap Remoboard, turn on Allow Full Access.";
+"common.ok" = "Okay";
+
+"common.gotosetting" = "Go to settings";
+"common.howtoallow" = "How to allow";
+"common.howtoallow.shortguide" = "1. Tap 'Go to settings', tap Keyboard, then turn on Allow Full Access. 2. Or open Setting-General-Keyboard-Keyboard-Remoboard, turn on Allow Full Access";
+"common.later" = "Later";
+
+"common.bluetooth" = "Bluetooth";
+"common.ipconnectioncode" = "IP (Deprecated Soon)";
+"common.http" = "Web";
+"common.chooseconnectionmode" = "Choose Connection Mode";
+"common.cancel" = "Cancel";
+
+"message.handoffcompleted" = "Handoff completed, tap the Handoff-Button in your macOS, go back to last app and enjoy typing :)";

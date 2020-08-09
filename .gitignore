@@ -1,0 +1,37 @@
+
+# ios
+
+# resource
+resource/icons
+ios/remotekb/remotekb.xcworkspace/xcuserdata/
+test/BlueToothCentral/BlueToothCentral.xcodeproj/project.xcworkspace/xcuserdata
+test/BluetoothPeripheral/BluetoothPeripheral.xcodeproj/project.xcworkspace/xcuserdata/
+test/BluetoothPeripheral/BluetoothPeripheral.xcodeproj/xcuserdata/
+macos/RemoteKBDesktop/RemoteKBDesktop.xcodeproj/project.xcworkspace/xcuserdata/
+desktop/build-debug
+macos/RemoteKBDesktop/RemoteKBDesktop.xcodeproj/xcuserdata/
+dep/bifrost/bifrost-server/bifrost-server.xcodeproj/project.xcworkspace/xcuserdata/
+dep/bifrost/bifrost-client/bifrost-client.xcodeproj/project.xcworkspace/xcuserdata/
+
+# website
+remoboard.github.io/
+
+# macos
+macos/RemoteKBMac/RemoteKBMac.xcodeproj/project.xcworkspace/xcuserdata/
+
+# windows
+windows/RemoteKBWindows/build-debug/
+windows/RemoteKBWindows/build-release/
+windows/RemoteKBWindows/build-profile/
+windows/RemoteKBWindows/remotekb/remotekb.pro.user
+
+# dist/
+dist/
+macos/RemoteKBMac/RemoteKBMac.xcodeproj/xcuserdata/
+windows/RemoteKBWindows/build-macos
+macos/RemoteKBMac/RemoteKBMac.xcodeproj/project.xcworkspace/xcshareddata
+android/remotekb/app/release
+android/remotekb/app/.cxx/cmake/release/
+android/remotekb/app/.cxx/
+dep/bifrost/bifrost-http/bifrost-http.xcodeproj/project.xcworkspace/xcuserdata/
+dep/bifrost/bifrost-http/bifrost-http.xcodeproj/xcuserdata/

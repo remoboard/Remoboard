@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/remotekb.png</file>
+        <file>remotekb.icns</file>
+        <file>remotekb.ico</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file>en.qm</file>
+        <file>zh.qm</file>
+    </qresource>
+</RCC>

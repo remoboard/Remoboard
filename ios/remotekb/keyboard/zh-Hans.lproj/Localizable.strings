@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  remotekb
+
+  Created by everettjf on 2019/6/19.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+"GuideAllowFullAccess" = "请打开 设置>通用>键盘>键盘>远程输入法, 启用 允许完全访问";
+"Next" = "切换";
+"Qwerty" = "键盘";
+"Words" = "短语";
+"Help" = "帮助";
+
+"Return" = "换行";
+"Send" = "发送";
+"Done" = "完成";
+"Search" = "搜索";
+
+"Copy" = "复制";
+"Handoff" = "接力";
+
+"ipnetwork.message.waiting" = "等待连接";
+"ipnetwork.message.code" = "连接码";
+
+"message.connected" = "已连接,打字啦 :)";
+"Wi-Fi not connected" = "请使用Wi-Fi连接网络";

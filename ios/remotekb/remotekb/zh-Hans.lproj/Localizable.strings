@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  remotekb
+
+  Created by everettjf on 2019/8/30.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+
+"app.name" = "远程输入法";
+"app.longname" = "远程输入法";
+
+"title.general" = "通用";
+"title.howtouse" = "使用方法";
+"title.installguide" = "安装方法";
+"title.downloaddesktop" = "下载电脑端";
+"title.faq" = "常见问题";
+"title.manage" = "管理";
+"title.quickwords" = "快捷短语";
+"title.connectionmode" = "连接模式";
+"title.allowfullaccess" = "允许完全访问";
+"title.testinput" = "测试输入";
+"title.feedback" = "反馈";
+"title.email" = "邮件";
+"title.weibo" = "微博";
+"title.wechat" = "微信订阅号";
+"title.telegram" = "电报";
+"title.more" = "更多";
+"title.appversion" = "应用版本";
+"title.starapp" = "给应用评分";
+"title.shareapp" = "分享应用";
+"title.qqgroup" = "QQ群";
+"title.products" = "其他作品";
+"title.lab" = "实验室";
+"title.whatislab" = "实验室是什么";
+
+
+"vc.testinput.title" = "测试输入";
+"vc.testinput.defaulttext" = "在这里输入";
+
+"vc.quickwordslist.title" = "管理快捷短语";
+"vc.quickwordsedit.title.edit" = "编辑快捷短语";
+"vc.quickwordsedit.title.add" = "添加快捷短语";
+"vc.quickwordsedit.save" = "保存";
+
+"common.viewdetailguide" = "查看图文教程";
+"common.title.install" = "安装";
+"common.title.install.shortguide" = "1. 打开 设置>通用>键盘>键盘>添加新的键盘, 点击 远程输入法. \n2. 继续点击远程输入法，启用 允许完全访问";
+"common.ok" = "好的";
+
+"common.gotosetting" = "打开设置";
+"common.howtoallow" = "如何允许";
+"common.howtoallow.shortguide" = "1. 点击打开设置，然后点击键盘,启用允许完全访问.\n2. 或者打开 设置>通用>键盘>键盘>远程输入法, 启用 允许完全访问";
+"common.later" = "以后再说";
+
+"common.bluetooth" = "蓝牙";
+"common.ipconnectioncode" = "IP地址(即将废弃)";
+"common.http" = "Web";
+"common.chooseconnectionmode" = "选择连接模式";
+"common.cancel" = "取消";
+
+"message.handoffcompleted" = "接力完成，现在可以在macOS上打开接力按钮，然后回到刚才的应用继续输入啦 :)";

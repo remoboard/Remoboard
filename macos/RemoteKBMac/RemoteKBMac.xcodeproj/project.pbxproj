@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D10790FA231BED2B0050E6A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D10790FC231BED2B0050E6A8 /* InfoPlist.strings */; };
+		D10790FE231BED300050E6A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1079100231BED300050E6A8 /* Localizable.strings */; };
+		D1351D6222EDC5DC003B2946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1351D6122EDC5DC003B2946 /* Assets.xcassets */; };
+		D1351D6522EDC5DC003B2946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1351D6322EDC5DC003B2946 /* Main.storyboard */; };
+		D1351D6822EDC5DC003B2946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1351D6722EDC5DC003B2946 /* main.m */; };
+		D1351D7F22EDC697003B2946 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D7D22EDC697003B2946 /* AppDelegate.mm */; };
+		D1351D9522EDC6BA003B2946 /* Utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D8222EDC6BA003B2946 /* Utils.mm */; };
+		D1351D9622EDC6BA003B2946 /* DesktopSetting.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D8322EDC6BA003B2946 /* DesktopSetting.mm */; };
+		D1351D9722EDC6BA003B2946 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D8622EDC6BA003B2946 /* ViewController.mm */; };
+		D1351D9A22EDC6BA003B2946 /* BluetoothCentralManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D9022EDC6BA003B2946 /* BluetoothCentralManager.mm */; };
+		D1351D9B22EDC6BA003B2946 /* ChanelClientDefine.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D9122EDC6BA003B2946 /* ChanelClientDefine.mm */; };
+		D1351D9C22EDC6BA003B2946 /* ChannelClientFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D9222EDC6BA003B2946 /* ChannelClientFactory.mm */; };
+		D1351D9D22EDC6BA003B2946 /* NetworkClientManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1351D9422EDC6BA003B2946 /* NetworkClientManager.mm */; };
+		D1351DA022EDC715003B2946 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1351D9F22EDC715003B2946 /* CoreBluetooth.framework */; };
+		D1351DAB22EF527B003B2946 /* MPAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D1351DA422EF527A003B2946 /* MPAnalyticsConfiguration.m */; };
+		D1351DAC22EF527B003B2946 /* MPAnalyticsParamBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D1351DA622EF527A003B2946 /* MPAnalyticsParamBuilder.m */; };
+		D1351DAD22EF527B003B2946 /* MPGoogleAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = D1351DA822EF527B003B2946 /* MPGoogleAnalyticsTracker.m */; };
+		D1E9DB7C230AFDFC0027B7BC /* ImmediateInputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E9DB7B230AFDFC0027B7BC /* ImmediateInputHandler.m */; };
+		D1E9DB7F230AFE070027B7BC /* StandardInputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E9DB7E230AFE070027B7BC /* StandardInputHandler.m */; };
+		D1E9DB88230AFF710027B7BC /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E9DB87230AFF710027B7BC /* InputHandler.m */; };
+		D1E9DB8B230C46860027B7BC /* NSWindow+FullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E9DB8A230C46860027B7BC /* NSWindow+FullScreen.m */; };
+		D1E9DBA3230C5AA60027B7BC /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D1E9DB8D230C5AA60027B7BC /* .gitkeep */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D10790F5231BEC730050E6A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D10790FB231BED2B0050E6A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D10790FD231BED2D0050E6A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D10790FF231BED300050E6A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D1079101231BED330050E6A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D1351D5822EDC5DB003B2946 /* Remoboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remoboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1351D6122EDC5DC003B2946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1351D6422EDC5DC003B2946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1351D6622EDC5DC003B2946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1351D6722EDC5DC003B2946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1351D6922EDC5DC003B2946 /* RemoteKBMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteKBMac.entitlements; sourceTree = "<group>"; };
+		D1351D7D22EDC697003B2946 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		D1351D7E22EDC697003B2946 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1351D8122EDC6BA003B2946 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		D1351D8222EDC6BA003B2946 /* Utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Utils.mm; sourceTree = "<group>"; };
+		D1351D8322EDC6BA003B2946 /* DesktopSetting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DesktopSetting.mm; sourceTree = "<group>"; };
+		D1351D8422EDC6BA003B2946 /* DesktopSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopSetting.h; sourceTree = "<group>"; };
+		D1351D8622EDC6BA003B2946 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		D1351D8B22EDC6BA003B2946 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1351D8D22EDC6BA003B2946 /* ChannelClientFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelClientFactory.h; sourceTree = "<group>"; };
+		D1351D8E22EDC6BA003B2946 /* ChanelClientDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanelClientDefine.h; sourceTree = "<group>"; };
+		D1351D8F22EDC6BA003B2946 /* NetworkClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClientManager.h; sourceTree = "<group>"; };
+		D1351D9022EDC6BA003B2946 /* BluetoothCentralManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BluetoothCentralManager.mm; sourceTree = "<group>"; };
+		D1351D9122EDC6BA003B2946 /* ChanelClientDefine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChanelClientDefine.mm; sourceTree = "<group>"; };
+		D1351D9222EDC6BA003B2946 /* ChannelClientFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChannelClientFactory.mm; sourceTree = "<group>"; };
+		D1351D9322EDC6BA003B2946 /* BluetoothCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothCentralManager.h; sourceTree = "<group>"; };
+		D1351D9422EDC6BA003B2946 /* NetworkClientManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NetworkClientManager.mm; sourceTree = "<group>"; };
+		D1351D9F22EDC715003B2946 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D1351DA422EF527A003B2946 /* MPAnalyticsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		D1351DA522EF527A003B2946 /* MPAnalyticsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		D1351DA622EF527A003B2946 /* MPAnalyticsParamBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAnalyticsParamBuilder.m; sourceTree = "<group>"; };
+		D1351DA722EF527A003B2946 /* GoogleAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAnalyticsTracker.h; sourceTree = "<group>"; };
+		D1351DA822EF527B003B2946 /* MPGoogleAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGoogleAnalyticsTracker.m; sourceTree = "<group>"; };
+		D1351DA922EF527B003B2946 /* MPGoogleAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAnalyticsTracker.h; sourceTree = "<group>"; };
+		D1351DAA22EF527B003B2946 /* MPAnalyticsParamBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAnalyticsParamBuilder.h; sourceTree = "<group>"; };
+		D15F72742325033500E3894B /* Remoboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Remoboard.entitlements; sourceTree = "<group>"; };
+		D1E9DB7A230AFDFC0027B7BC /* ImmediateInputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImmediateInputHandler.h; sourceTree = "<group>"; };
+		D1E9DB7B230AFDFC0027B7BC /* ImmediateInputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImmediateInputHandler.m; sourceTree = "<group>"; };
+		D1E9DB7D230AFE070027B7BC /* StandardInputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardInputHandler.h; sourceTree = "<group>"; };
+		D1E9DB7E230AFE070027B7BC /* StandardInputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardInputHandler.m; sourceTree = "<group>"; };
+		D1E9DB86230AFF710027B7BC /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		D1E9DB87230AFF710027B7BC /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		D1E9DB89230C46860027B7BC /* NSWindow+FullScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindow+FullScreen.h"; sourceTree = "<group>"; };
+		D1E9DB8A230C46860027B7BC /* NSWindow+FullScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+FullScreen.m"; sourceTree = "<group>"; };
+		D1E9DB8D230C5AA60027B7BC /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D1E9DB8F230C5AA60027B7BC /* tinyformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyformat.h; sourceTree = "<group>"; };
+		D1E9DB90230C5AA60027B7BC /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		D1E9DB91230C5AA60027B7BC /* anybase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anybase.h; sourceTree = "<group>"; };
+		D1E9DB92230C5AA60027B7BC /* rekb_ver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rekb_ver.h; sourceTree = "<group>"; };
+		D1E9DB93230C5AA60027B7BC /* bledef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bledef.h; sourceTree = "<group>"; };
+		D1E9DB94230C5AA60027B7BC /* logic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = logic.hpp; sourceTree = "<group>"; };
+		D1E9DB97230C5AA60027B7BC /* bifrost_file_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_file_server.hpp; sourceTree = "<group>"; };
+		D1E9DB98230C5AA60027B7BC /* bifrost_chat_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_chat_server.hpp; sourceTree = "<group>"; };
+		D1E9DB99230C5AA60027B7BC /* bifrost_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_server.hpp; sourceTree = "<group>"; };
+		D1E9DB9B230C5AA60027B7BC /* bifrost_util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_util.hpp; sourceTree = "<group>"; };
+		D1E9DB9C230C5AA60027B7BC /* bifrost_protocol.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_protocol.hpp; sourceTree = "<group>"; };
+		D1E9DB9D230C5AA60027B7BC /* bifrost_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_config.hpp; sourceTree = "<group>"; };
+		D1E9DB9E230C5AA60027B7BC /* bifrost_file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_file.hpp; sourceTree = "<group>"; };
+		D1E9DBA0230C5AA60027B7BC /* bifrost_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_client.hpp; sourceTree = "<group>"; };
+		D1E9DBA1230C5AA60027B7BC /* bifrost_chat_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_chat_client.hpp; sourceTree = "<group>"; };
+		D1E9DBA2230C5AA60027B7BC /* bifrost_file_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bifrost_file_client.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1351D5522EDC5DB003B2946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1351DA022EDC715003B2946 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1351D4F22EDC5DB003B2946 = {
+			isa = PBXGroup;
+			children = (
+				D1351D5A22EDC5DB003B2946 /* RemoteKBMac */,
+				D1351D5922EDC5DB003B2946 /* Products */,
+				D1351D9E22EDC715003B2946 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1351D5922EDC5DB003B2946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1351D5822EDC5DB003B2946 /* Remoboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1351D5A22EDC5DB003B2946 /* RemoteKBMac */ = {
+			isa = PBXGroup;
+			children = (
+				D15F72742325033500E3894B /* Remoboard.entitlements */,
+				D1E9DB8C230C5AA60027B7BC /* dep */,
+				D1E9DB79230AFDD50027B7BC /* logic */,
+				D1351D8C22EDC6BA003B2946 /* channel */,
+				D1351D8022EDC6BA003B2946 /* util */,
+				D1351D8522EDC6BA003B2946 /* view */,
+				D1351D7E22EDC697003B2946 /* AppDelegate.h */,
+				D1351D7D22EDC697003B2946 /* AppDelegate.mm */,
+				D1351D6122EDC5DC003B2946 /* Assets.xcassets */,
+				D1351D6322EDC5DC003B2946 /* Main.storyboard */,
+				D1351D6622EDC5DC003B2946 /* Info.plist */,
+				D1351D6722EDC5DC003B2946 /* main.m */,
+				D1351D6922EDC5DC003B2946 /* RemoteKBMac.entitlements */,
+				D10790FC231BED2B0050E6A8 /* InfoPlist.strings */,
+				D1079100231BED300050E6A8 /* Localizable.strings */,
+			);
+			path = RemoteKBMac;
+			sourceTree = "<group>";
+		};
+		D1351D8022EDC6BA003B2946 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D1351DA322EF525D003B2946 /* analytics */,
+				D1351D8122EDC6BA003B2946 /* Utils.h */,
+				D1351D8222EDC6BA003B2946 /* Utils.mm */,
+				D1351D8322EDC6BA003B2946 /* DesktopSetting.mm */,
+				D1351D8422EDC6BA003B2946 /* DesktopSetting.h */,
+				D1E9DB89230C46860027B7BC /* NSWindow+FullScreen.h */,
+				D1E9DB8A230C46860027B7BC /* NSWindow+FullScreen.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		D1351D8522EDC6BA003B2946 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D1351D8B22EDC6BA003B2946 /* ViewController.h */,
+				D1351D8622EDC6BA003B2946 /* ViewController.mm */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D1351D8C22EDC6BA003B2946 /* channel */ = {
+			isa = PBXGroup;
+			children = (
+				D1351D8E22EDC6BA003B2946 /* ChanelClientDefine.h */,
+				D1351D9122EDC6BA003B2946 /* ChanelClientDefine.mm */,
+				D1351D8D22EDC6BA003B2946 /* ChannelClientFactory.h */,
+				D1351D9222EDC6BA003B2946 /* ChannelClientFactory.mm */,
+				D1351D8F22EDC6BA003B2946 /* NetworkClientManager.h */,
+				D1351D9422EDC6BA003B2946 /* NetworkClientManager.mm */,
+				D1351D9322EDC6BA003B2946 /* BluetoothCentralManager.h */,
+				D1351D9022EDC6BA003B2946 /* BluetoothCentralManager.mm */,
+			);
+			path = channel;
+			sourceTree = "<group>";
+		};
+		D1351D9E22EDC715003B2946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1351D9F22EDC715003B2946 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1351DA322EF525D003B2946 /* analytics */ = {
+			isa = PBXGroup;
+			children = (
+				D1351DA722EF527A003B2946 /* GoogleAnalyticsTracker.h */,
+				D1351DA522EF527A003B2946 /* MPAnalyticsConfiguration.h */,
+				D1351DA422EF527A003B2946 /* MPAnalyticsConfiguration.m */,
+				D1351DAA22EF527B003B2946 /* MPAnalyticsParamBuilder.h */,
+				D1351DA622EF527A003B2946 /* MPAnalyticsParamBuilder.m */,
+				D1351DA922EF527B003B2946 /* MPGoogleAnalyticsTracker.h */,
+				D1351DA822EF527B003B2946 /* MPGoogleAnalyticsTracker.m */,
+			);
+			path = analytics;
+			sourceTree = "<group>";
+		};
+		D1E9DB79230AFDD50027B7BC /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DB86230AFF710027B7BC /* InputHandler.h */,
+				D1E9DB87230AFF710027B7BC /* InputHandler.m */,
+				D1E9DB7A230AFDFC0027B7BC /* ImmediateInputHandler.h */,
+				D1E9DB7B230AFDFC0027B7BC /* ImmediateInputHandler.m */,
+				D1E9DB7D230AFE070027B7BC /* StandardInputHandler.h */,
+				D1E9DB7E230AFE070027B7BC /* StandardInputHandler.m */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		D1E9DB8C230C5AA60027B7BC /* dep */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DB8D230C5AA60027B7BC /* .gitkeep */,
+				D1E9DB8E230C5AA60027B7BC /* logic */,
+				D1E9DB95230C5AA60027B7BC /* bifrost */,
+			);
+			path = dep;
+			sourceTree = SOURCE_ROOT;
+		};
+		D1E9DB8E230C5AA60027B7BC /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DB8F230C5AA60027B7BC /* tinyformat.h */,
+				D1E9DB90230C5AA60027B7BC /* json.hpp */,
+				D1E9DB91230C5AA60027B7BC /* anybase.h */,
+				D1E9DB92230C5AA60027B7BC /* rekb_ver.h */,
+				D1E9DB93230C5AA60027B7BC /* bledef.h */,
+				D1E9DB94230C5AA60027B7BC /* logic.hpp */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		D1E9DB95230C5AA60027B7BC /* bifrost */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DB96230C5AA60027B7BC /* server */,
+				D1E9DB9A230C5AA60027B7BC /* common */,
+				D1E9DB9F230C5AA60027B7BC /* client */,
+			);
+			path = bifrost;
+			sourceTree = "<group>";
+		};
+		D1E9DB96230C5AA60027B7BC /* server */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DB97230C5AA60027B7BC /* bifrost_file_server.hpp */,
+				D1E9DB98230C5AA60027B7BC /* bifrost_chat_server.hpp */,
+				D1E9DB99230C5AA60027B7BC /* bifrost_server.hpp */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		D1E9DB9A230C5AA60027B7BC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DB9B230C5AA60027B7BC /* bifrost_util.hpp */,
+				D1E9DB9C230C5AA60027B7BC /* bifrost_protocol.hpp */,
+				D1E9DB9D230C5AA60027B7BC /* bifrost_config.hpp */,
+				D1E9DB9E230C5AA60027B7BC /* bifrost_file.hpp */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		D1E9DB9F230C5AA60027B7BC /* client */ = {
+			isa = PBXGroup;
+			children = (
+				D1E9DBA0230C5AA60027B7BC /* bifrost_client.hpp */,
+				D1E9DBA1230C5AA60027B7BC /* bifrost_chat_client.hpp */,
+				D1E9DBA2230C5AA60027B7BC /* bifrost_file_client.hpp */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1351D5722EDC5DB003B2946 /* RemoteKBMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1351D7722EDC5DC003B2946 /* Build configuration list for PBXNativeTarget "RemoteKBMac" */;
+			buildPhases = (
+				D1351D5422EDC5DB003B2946 /* Sources */,
+				D1351D5522EDC5DB003B2946 /* Frameworks */,
+				D1351D5622EDC5DB003B2946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteKBMac;
+			productName = RemoteKBMac;
+			productReference = D1351D5822EDC5DB003B2946 /* Remoboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1351D5022EDC5DB003B2946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = everettjf;
+				TargetAttributes = {
+					D1351D5722EDC5DB003B2946 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D1351D5322EDC5DB003B2946 /* Build configuration list for PBXProject "RemoteKBMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D1351D4F22EDC5DB003B2946;
+			productRefGroup = D1351D5922EDC5DB003B2946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1351D5722EDC5DB003B2946 /* RemoteKBMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1351D5622EDC5DB003B2946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10790FE231BED300050E6A8 /* Localizable.strings in Resources */,
+				D1E9DBA3230C5AA60027B7BC /* .gitkeep in Resources */,
+				D10790FA231BED2B0050E6A8 /* InfoPlist.strings in Resources */,
+				D1351D6222EDC5DC003B2946 /* Assets.xcassets in Resources */,
+				D1351D6522EDC5DC003B2946 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1351D5422EDC5DB003B2946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1351D9C22EDC6BA003B2946 /* ChannelClientFactory.mm in Sources */,
+				D1351D7F22EDC697003B2946 /* AppDelegate.mm in Sources */,
+				D1351D9622EDC6BA003B2946 /* DesktopSetting.mm in Sources */,
+				D1351D9722EDC6BA003B2946 /* ViewController.mm in Sources */,
+				D1E9DB88230AFF710027B7BC /* InputHandler.m in Sources */,
+				D1351DAD22EF527B003B2946 /* MPGoogleAnalyticsTracker.m in Sources */,
+				D1351D9A22EDC6BA003B2946 /* BluetoothCentralManager.mm in Sources */,
+				D1E9DB8B230C46860027B7BC /* NSWindow+FullScreen.m in Sources */,
+				D1351DAB22EF527B003B2946 /* MPAnalyticsConfiguration.m in Sources */,
+				D1351D9B22EDC6BA003B2946 /* ChanelClientDefine.mm in Sources */,
+				D1351D9D22EDC6BA003B2946 /* NetworkClientManager.mm in Sources */,
+				D1351D6822EDC5DC003B2946 /* main.m in Sources */,
+				D1E9DB7F230AFE070027B7BC /* StandardInputHandler.m in Sources */,
+				D1E9DB7C230AFDFC0027B7BC /* ImmediateInputHandler.m in Sources */,
+				D1351DAC22EF527B003B2946 /* MPAnalyticsParamBuilder.m in Sources */,
+				D1351D9522EDC6BA003B2946 /* Utils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D10790FC231BED2B0050E6A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D10790FB231BED2B0050E6A8 /* en */,
+				D10790FD231BED2D0050E6A8 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D1079100231BED300050E6A8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D10790FF231BED300050E6A8 /* en */,
+				D1079101231BED330050E6A8 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D1351D6322EDC5DC003B2946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1351D6422EDC5DC003B2946 /* Base */,
+				D10790F5231BEC730050E6A8 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1351D7522EDC5DC003B2946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		D1351D7622EDC5DC003B2946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		D1351D7822EDC5DC003B2946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RemoteKBMac/Remoboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 16;
+				DEVELOPMENT_TEAM = YPV49M8592;
+				HEADER_SEARCH_PATHS = "$(HOME)/local/src/boost_1_70_0";
+				INFOPLIST_FILE = RemoteKBMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.everettjf.remotekbdesktop;
+				PRODUCT_NAME = Remoboard;
+			};
+			name = Debug;
+		};
+		D1351D7922EDC5DC003B2946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RemoteKBMac/Remoboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 16;
+				DEVELOPMENT_TEAM = YPV49M8592;
+				HEADER_SEARCH_PATHS = "$(HOME)/local/src/boost_1_70_0";
+				INFOPLIST_FILE = RemoteKBMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.everettjf.remotekbdesktop;
+				PRODUCT_NAME = Remoboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1351D5322EDC5DB003B2946 /* Build configuration list for PBXProject "RemoteKBMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1351D7522EDC5DC003B2946 /* Debug */,
+				D1351D7622EDC5DC003B2946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1351D7722EDC5DC003B2946 /* Build configuration list for PBXNativeTarget "RemoteKBMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1351D7822EDC5DC003B2946 /* Debug */,
+				D1351D7922EDC5DC003B2946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1351D5022EDC5DB003B2946 /* Project object */;
+}

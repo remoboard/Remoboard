@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  remotekb
+
+  Created by everettjf on 2019/6/19.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+"GuideAllowFullAccess" = "Please go to Settings > General > Keyboard > Keyboards > Remoboard, and make sure Allow Full Access is turned on.";
+"ipnetwork.message.waiting" = "Waiting for connection";
+"ipnetwork.message.code" = "Connection Code";
+
+"message.connected" = "Connected, Enjoy typing :)";
+

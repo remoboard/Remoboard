@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  RemoteKBMac
+
+  Created by everettjf on 2019/9/1.
+  Copyright © 2019 everettjf. All rights reserved.
+*/
+
+"CFBundleName" = "远程输入法";
