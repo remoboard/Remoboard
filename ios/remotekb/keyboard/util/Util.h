@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Util : NSObject
 
 + (NSString *)currentIPAddress;
++ (NSDictionary *)getAllIPAddress;
 + (NSString *)ipAddress2ConnectionCode:(NSString*)ipaddress;
 
 + (void)impactOccurred;

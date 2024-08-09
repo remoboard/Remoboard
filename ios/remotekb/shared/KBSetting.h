@@ -11,8 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, KBConnectMode) {
-KBConnectMode_HTTP = 0, // Default For New Version
-    KBConnectMode_IP = 1,
+    KBConnectMode_HTTP = 0, // Default For New Version
     KBConnectMode_BLE = 2,
 };
 

@@ -67,6 +67,8 @@
     return [Util ipAddress2ConnectionCode:[Util currentIPAddress]];
 }
 
+
+
 + (NSString *)currentIPAddress
 {
     NSString *ipv4key = IOS_WIFI @"/" IP_ADDR_IPv4;

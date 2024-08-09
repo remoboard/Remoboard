@@ -16,6 +16,8 @@
 #import "LabViewController.h"
 #import "AppUtil.h"
 #import "AppMemoryData.h"
+#import <StoreKit/StoreKit.h>
+#import "WeeklyExecutionManager.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -40,14 +42,14 @@
     }];
     
     [self.navigationController setNavigationBarHidden:YES];
-
+    
     self.title = systemTitle;
     
     CGRect bounds = [UIScreen mainScreen].bounds;
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0,0,bounds.size.width,100)];
     UILabel *titleLabel = [[UILabel alloc] init];
     [header addSubview:titleLabel];
-
+    
     titleLabel.text = topBarTitle;
     titleLabel.font = [UIFont systemFontOfSize:38 weight:UIFontWeightBold];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,159 +80,132 @@
     
     __weak typeof(self) wself = self;
     self.groups = @[
-                   @{
-                       @"title":ttt(@"title.general"),
-                       @"items":@[
-                           @{
-                               @"icon":@"book",
-                               @"title":ttt(@"title.howtouse"),
-                               @"action": ^{
-                                   NSLog(@"action");
-                                   [wself openSite];
-                               }
-                               },
-                           @{
-                               @"icon":@"setup",
-                               @"title":ttt(@"title.installguide"),
-                               @"action": ^{
-                                   NSLog(@"action");
-                                   [wself showInstall];
-                               }
-                               },
-                           @{
-                               @"icon":@"auth",
-                               @"title":ttt(@"title.allowfullaccess"),
-                               @"action": ^{
-                                   NSLog(@"action");
-                                   [wself showEnableFullAccess];
-                               }
-                               },
-                           @{
-                               @"icon":@"help",
-                               @"title":ttt(@"title.faq"),
-                               @"action": ^{
-                                   NSLog(@"action");
-                                   [wself openSite];
-                               }
-                               },
-                           ]
-                       },
-                   @{
-                       @"title":ttt(@"title.manage"),
-                       @"items":@[
-                               @{
-                                   @"icon":@"words",
-                                   @"title":ttt(@"title.quickwords"),
-                                   @"action": ^{
-                                       QuickWordsListViewController *vc = [[QuickWordsListViewController alloc] init];
-                                       [wself.navigationController pushViewController:vc animated:YES];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"test",
-                                   @"title":ttt(@"title.testinput"),
-                                   @"action": ^{
-                                       TestInputViewController *vc = [[TestInputViewController alloc] init];
-                                       [wself.navigationController pushViewController:vc animated:YES];
-                                   }
-                                   },
-                               ]
-                       },
-                   @{
-                       @"title":ttt(@"title.feedback"),
-                       @"items":@[
-                               @{
-                                   @"icon":@"mail",
-                                   @"title":ttt(@"title.email"),
-                                   @"action": ^{
-                                       NSLog(@"action");
-                                       [wself openUrl:@"mailto:everettjf@live.com?subject=Remoboard_iOS"];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"weibo",
-                                   @"title":ttt(@"title.weibo"),
-                                   @"action": ^{
-                                       NSLog(@"action");
-                                       NSString *url = @"https://weibo.com/everettjf";
-                                       [wself openUrl:url];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"wechat",
-                                   @"title":ttt(@"title.wechat"),
-                                   @"action": ^{
-                                       NSLog(@"action");
-                                       [wself openUrl:@"https://everettjf.github.io/bukuzao/"];
-                                   }
-                                   },
-                               @{
-                                   @"icon": (hasLang ? @"qq" : @"telegram"),
-                                   @"title": (hasLang ? ttt(@"title.qqgroup") : ttt(@"title.telegram")),
-                                   @"action": ^{
-                                       if (hasLang) {
-                                           [wself openUrl:@"mqqapi://card/show_pslcard?src_type=internal&version=1&card_type=group&uin=486615112"];
-                                       }else {
-                                           [wself openUrl:@"https://t.me/remoboard"];
-                                       }
-                                   }
-                                   },
-                               ]
-                       },
-                   @{
-                       @"title":ttt(@"title.more"),
-                       @"items":@[
-                               @{
-                                   @"icon":@"star",
-                                   @"title":ttt(@"title.starapp"),
-                                   @"action": ^{
-                                       NSLog(@"action");
-                                       NSString * url = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@?action=write-review",@"1474458879"];
-                                       [wself openUrl:url];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"share",
-                                   @"title":ttt(@"title.shareapp"),
-                                   @"action": ^{
-                                       NSLog(@"action");
-                                       NSString *str;
-                                       ttt_zhcn;
-                                       if (hasLang) {
-                                           str = @"远程输入法 - 电脑打字，手机输入 https://itunes.apple.com/cn/app/id1474458879";
-                                       } else {
-                                           str = @"Remoboard - Type From Desktop https://apps.apple.com/us/app/id1474458879";
-                                       }
-                                       [wself openShare:str];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"products",
-                                   @"title": ttt(@"title.products"),
-                                   @"action": ^{
-                                       [wself openUrl:@"https://everettjf.github.io/products/"];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"lab",
-                                   @"title": ttt(@"title.lab"),
-                                   @"action": ^{
-                                       [self openLab];
-                                   }
-                                   },
-                               @{
-                                   @"icon":@"app",
-                                   @"title": [NSString stringWithFormat:@"%@ %@",ttt(@"title.appversion"), [AppUtil getAppVersion]],
-                                   @"action": ^{
-                                       NSLog(@"action");
-                                       [self onAppVersionTapped];
-                                   }
-                                   },
-                               ]
-                       },
-                   ];
-
-
+        @{
+            @"title":ttt(@"title.general"),
+            @"items":@[
+                @{
+                    @"icon":@"book",
+                    @"title":ttt(@"title.howtouse"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        [wself openSite];
+                    }
+                },
+                @{
+                    @"icon":@"setup",
+                    @"title":ttt(@"title.installguide"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        [wself showInstall];
+                    }
+                },
+                @{
+                    @"icon":@"auth",
+                    @"title":ttt(@"title.allowfullaccess"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        [wself showEnableFullAccess];
+                    }
+                },
+                @{
+                    @"icon":@"help",
+                    @"title":ttt(@"title.faq"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        [wself openSite];
+                    }
+                },
+            ]
+        },
+        @{
+            @"title":ttt(@"title.manage"),
+            @"items":@[
+                @{
+                    @"icon":@"words",
+                    @"title":ttt(@"title.quickwords"),
+                    @"action": ^{
+                        QuickWordsListViewController *vc = [[QuickWordsListViewController alloc] init];
+                        [wself.navigationController pushViewController:vc animated:YES];
+                    }
+                },
+                @{
+                    @"icon":@"test",
+                    @"title":ttt(@"title.testinput"),
+                    @"action": ^{
+                        TestInputViewController *vc = [[TestInputViewController alloc] init];
+                        [wself.navigationController pushViewController:vc animated:YES];
+                    }
+                },
+            ]
+        },
+        @{
+            @"title":ttt(@"title.feedback"),
+            @"items":@[
+                @{
+                    @"icon":@"mail",
+                    @"title":ttt(@"title.email"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        [wself openUrl:@"mailto:everettjf@live.com?subject=Remoboard_Feedback"];
+                    }
+                },
+                @{
+                    @"icon":@"wechat",
+                    @"title":ttt(@"title.wechat"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        [wself openUrl:@"https://everettjf.github.io/bukuzao/"];
+                    }
+                },
+            ]
+        },
+        @{
+            @"title":ttt(@"title.more"),
+            @"items":@[
+                @{
+                    @"icon":@"star",
+                    @"title":ttt(@"title.starapp"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        NSString * url = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@?action=write-review",@"1474458879"];
+                        [wself openUrl:url];
+                    }
+                },
+                @{
+                    @"icon":@"share",
+                    @"title":ttt(@"title.shareapp"),
+                    @"action": ^{
+                        NSLog(@"action");
+                        NSString *str;
+                        ttt_zhcn;
+                        if (hasLang) {
+                            str = @"远程输入法 - 电脑打字，手机输入 https://itunes.apple.com/cn/app/id1474458879";
+                        } else {
+                            str = @"Remoboard - Type From Desktop https://apps.apple.com/us/app/id1474458879";
+                        }
+                        [wself openShare:str];
+                    }
+                },
+                @{
+                    @"icon":@"products",
+                    @"title": ttt(@"title.products"),
+                    @"action": ^{
+                        [wself openUrl:@"https://everettjf.github.io/products/"];
+                    }
+                },
+                @{
+                    @"icon":@"app",
+                    @"title": [NSString stringWithFormat:@"%@ %@",ttt(@"title.appversion"), [AppUtil getAppVersion]],
+                    @"action": ^{
+                        NSLog(@"action");
+                        [self onAppVersionTapped];
+                    }
+                },
+            ]
+        },
+    ];
+    
+    
     [[NSNotificationCenter defaultCenter] addObserverForName:@"HandoffUrl" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         NSString *handoffUrl = note.object;
         if (handoffUrl.length > 0 ) {
@@ -249,9 +224,9 @@
     NSString *base;
     ttt_zhcn;
     if (hasLang) {
-        base = @"https://remoboard.app/zhcn/";
+        base = @"https://remoboard.github.io/zhcn/";
     } else {
-        base = @"https://remoboard.app/";
+        base = @"https://remoboard.github.io/";
     }
     [self openUrl:base];
 }
@@ -264,11 +239,17 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
+    //    if ([AppMemoryData shared].isNewVersionFirstLaunch) {
+    //        // new version check
+    //        // nothing for current version
+    //    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        WeeklyExecutionManager *manager = [WeeklyExecutionManager sharedManager];
+        [manager executeBlock:^{
+            [SKStoreReviewController requestReview];
+        }];
+    });
     
-    if ([AppMemoryData shared].isNewVersionFirstLaunch) {
-        // new version check
-        // nothing for current version
-    }
 }
 
 - (void)showAlert:(NSString*)text {
@@ -292,7 +273,7 @@
     [alert addButton:ttt(@"common.viewdetailguide") actionBlock:^{
         [self openSite];
     }];
-
+    
     [alert showInfo:ttt(@"common.title.install") subTitle:ttt(@"common.title.install.shortguide") closeButtonTitle:ttt(@"common.ok") duration:0.0f];
 }
 

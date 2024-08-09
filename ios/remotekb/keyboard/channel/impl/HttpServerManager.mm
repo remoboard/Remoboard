@@ -53,17 +53,78 @@ void HttpServerManager::start() {
         }
     };
     
-    NSString *ipAddress = [Util currentIPAddress];
-    if (ipAddress.length == 0) {
+    NSMutableDictionary *ipv4Addresses = [NSMutableDictionary dictionaryWithCapacity:6];
+    NSDictionary *allAddress = [Util getAllIPAddress];
+    NSMutableSet *validAddressSet = [NSMutableSet set];
+    for (NSString *key in allAddress) {
+        NSString *value = allAddress[key];
+        if ([key hasSuffix:@"/ipv4"]) {
+            [ipv4Addresses setObject:value forKey:key];
+            [validAddressSet addObject:value];
+        }
+    }
+    [validAddressSet removeObject:@"127.0.0.1"];
+    
+    NSLog(@"all ipv4 addresses :");
+    for ( NSString *key in ipv4Addresses) {
+        NSLog(@"- %@ : %@", key, ipv4Addresses[key]);
+    }
+    
+    
+#define MAIN_IP_TYPE        @"en0/ipv4"
+#define BACKUP_IP_TYPE      @"pdp_ip0/ipv4"
+    
+    // wifi ip
+    NSString *defaultAddress = ipv4Addresses[MAIN_IP_TYPE] ?:@"";
+    
+    // celular ip
+    if (defaultAddress.length == 0) {
+        defaultAddress = ipv4Addresses[BACKUP_IP_TYPE] ?:@"";
+    }
+    
+    // try others
+    if (defaultAddress.length == 0) {
+        if ([validAddressSet count] > 0) {
+            defaultAddress = [validAddressSet anyObject];
+        }
+    }
+    
+    // print
+    NSMutableSet *backupAddressSet = [validAddressSet mutableCopy];
+    if (defaultAddress.length > 0) {
+        [backupAddressSet removeObject:defaultAddress];
+    }
+    
+    
+    /*
+     - ipsec6/ipv4 : 192.0.0.6
+     - ipsec4/ipv4 : 192.0.0.6
+     - ipsec0/ipv4 : 192.0.0.6
+     - pdp_ip0/ipv4 : 10.11.12.129
+     - en2/ipv4 : 169.254.188.175
+     - lo0/ipv4 : 127.0.0.1
+     - bridge100/ipv4 : 172.20.10.1
+     */
+    
+    
+    if (defaultAddress.length == 0) {
         if(onStatus) {
-            onStatus("message","Wi-Fi not connected");
+            onStatus("message","Wi-Fi not connected and failed to find valid IP address");
         }
     } else {
-        NSString *httpUrl = [NSString stringWithFormat:@"http://%@:%s",ipAddress,httpPort];
+        NSString *defaultUrl = [NSString stringWithFormat:@"http://%@:%s",defaultAddress,httpPort];
+        NSMutableString *backupUrls = [NSMutableString string];
+        for (NSString *key in backupAddressSet) {
+            [backupUrls appendFormat: @"http://%@:%s , ",key,httpPort];
+        }
+        
+        NSString *message = [NSString stringWithFormat:@"Main: %@\nBackup: %@", defaultUrl, backupUrls];
+        NSLog(@"message = %@", message);
+        
         if(onStatus) {
-            onStatus("message",httpUrl.UTF8String);
-            onStatus("copy-content",httpUrl.UTF8String);
-            onStatus("handoff-content",httpUrl.UTF8String);
+            onStatus("message",message.UTF8String);
+            onStatus("copy-content",defaultUrl.UTF8String);
+            onStatus("handoff-content",defaultUrl.UTF8String);
         }
     }
      

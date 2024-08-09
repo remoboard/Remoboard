@@ -159,9 +159,6 @@
     UIAlertAction *action1 = [UIAlertAction actionWithTitle:httpTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [KBSetting sharedSetting].connectMode = KBConnectMode_HTTP;
     }];
-    UIAlertAction *action2 = [UIAlertAction actionWithTitle:ipTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [KBSetting sharedSetting].connectMode = KBConnectMode_IP;
-    }];
     UIAlertAction *action3 = [UIAlertAction actionWithTitle:bluetoothTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [KBSetting sharedSetting].connectMode = KBConnectMode_BLE;
     }];
@@ -170,7 +167,6 @@
     }];
     [actionSheet addAction:action1];
     [actionSheet addAction:action3];
-    [actionSheet addAction:action2];
     [actionSheet addAction:action4];
 
     UIPopoverPresentationController * popPresenter = [actionSheet popoverPresentationController];
@@ -184,9 +180,9 @@
     NSString *base;
     ttt_zhcn;
     if (hasLang) {
-        base = @"https://remoboard.app/zhcn/lab";
+        base = @"https://remoboard.github.io/zhcn/lab";
     } else {
-        base = @"https://remoboard.app/lab";
+        base = @"https://remoboard.github.io/lab";
     }
     [self openUrl:base];
 }

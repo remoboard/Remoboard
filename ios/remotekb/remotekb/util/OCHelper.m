@@ -8,10 +8,6 @@
 
 #import "OCHelper.h"
 
-@import AppCenter;
-@import AppCenterAnalytics;
-@import AppCenterCrashes;
-
 
 @implementation OCHelper
 
@@ -25,11 +21,7 @@
 }
 
 - (void)didFinishLaunching {
-    [MSAppCenter start:@"f983a7ea-5c81-49be-92e1-04a070a1b2da" withServices:@[
-                                                                              [MSAnalytics class],
-                                                                              [MSCrashes class]
-                                                                              ]];
-
+    
 }
 
 @end

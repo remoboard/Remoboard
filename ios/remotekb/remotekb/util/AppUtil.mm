@@ -12,9 +12,10 @@
 @implementation AppUtil
 + (NSString*)getAppVersion {
     NSString *shortVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-    NSString *buildVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
-    NSString *appVersion = [NSString stringWithFormat:@"%@.%@",shortVersion,buildVersion];
-    return appVersion;
+//    NSString *buildVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+//    NSString *appVersion = [NSString stringWithFormat:@"%@.%@",shortVersion,buildVersion];
+//    return appVersion;
+    return shortVersion;
 }
 
 + (void)openSetting {
